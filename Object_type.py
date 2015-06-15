@@ -16,13 +16,14 @@ class ObjectType:
 		for a specific 'ObjectType' such as dog or cat etc..
 
 		Methods:
-		1. compute_features    	 : Computes HOG features for all images belonging to the specific object, 
-								   given the HOG template size
-		2. train_classifier 	 : Trains a classfier based on HOG features. The features from this category 
-								   itself is used as +ve sample, and the method takes in -ve sample 
-								   features as it's argument
+		1. compute_features  : Computes HOG features for all images belonging to the specific object, 
+		given the HOG template size
+
+		2. train_classifier  : Trains a classfier based on HOG features. The features from this category 
+		itself is used as +ve sample, and the method takes in -ve sample features as it's argument
+
 		3. generate_random_boxes : Generates a set of random bounding boxes for a given image. Useful for 
-								   generating multiple negative training instances	from a single image
+		generating multiple negative training instances	from a single image
 	"""
 
 
