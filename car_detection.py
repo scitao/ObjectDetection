@@ -122,8 +122,7 @@ for i in range(len(template_sizes)):
 	joblib.dump(clf_side, temp_str, compress=9)
 
 
-
-#Test time ----- replace code for runing on cluster
+#Testing phase
 #Read input image and resize it
 im  = io.imread(test_image, as_grey=True)
 im = tr.resize(im, (256,256))
