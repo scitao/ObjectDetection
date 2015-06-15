@@ -9,7 +9,7 @@ Detecting objects is an open computer vision problem. Prior to the days of using
 * Best parameters for the linear SVM classifier built on HOG features are found through grid search and the results are cross validated
 * After the sliding window detections, the predictions are cleaned through an automated non maximal suppression process. Mean shift clustering is done to find unique bounding box for each instance of the 'object' in the input image
 
-### Requirements:
+### Requirements
 0. Anaconda python (or) the rest of the following libraries 
 0. Python 2.7
 0. Scikit learn
