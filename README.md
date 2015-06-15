@@ -35,7 +35,7 @@ python car_detection.py paths.txt bb_box.txt negative_paths.txt test_image.jpg
 The performance of the detectors are not top notch, they could be better with better grid search over SVM parameters (Both gaussian and linear kernels, with more ‘cost’ parameter variations). Another important aspect is to do **hard negative mining**, which hasn’t been implemented in this code. 
 
 ### Acknowledgements 
-* Carnegie Mellon’s computer vision course (16-720), most of the ideas spawned from those lectures
+* Carnegie Mellon’s computer vision course, most of the ideas spawned from those lectures
 * Thanks to Stanford AI Lab’s car dataset
 * PASCAL VOC dataset - used to generate negative training instances
 
