@@ -45,11 +45,9 @@ else:
 
 #Read the image paths
 image_paths = open(positive_paths).read().split('\n')
-image_paths = image_paths
 
 #Read the bounding boxes
 boxes = open(bbox_paths).read().split('\n')
-boxes = boxes
 
 #Storing the bounding boxes in numpy array of the form x1,y1,x2,y2
 bb_boxes = np.zeros((len(boxes),4))
