@@ -45,11 +45,11 @@ else:
 
 #Read the image paths
 image_paths = open(positive_paths).read().split('\n')
-image_paths = image_paths[:300] #Limiting to
+image_paths = image_paths
 
 #Read the bounding boxes
 boxes = open(bbox_paths).read().split('\n')
-boxes = boxes[:300]
+boxes = boxes
 
 #Storing the bounding boxes in numpy array of the form x1,y1,x2,y2
 bb_boxes = np.zeros((len(boxes),4))
@@ -94,7 +94,7 @@ non_cars = ObjectType('Non_cars')
 non_cars.file_paths = open(negative_paths).read().split('\n')
 
 #Generate bounding boxes from non car images for negative samples
-num_boxes = 10 #Number of boxes for each non car image
+num_boxes = 60 #Number of boxes for each non car image
 non_cars.generate_random_boxes(num_boxes)
 
 #Compute hog template and detectors in different sizes 
