@@ -23,7 +23,7 @@ Detecting objects is an open computer vision problem. Prior to the days of using
 * Training data from http://imagenet.stanford.edu/internal/car196/car_ims.tgz and extract it within the code’s main folder
 * A subset of PASCAL VOC 2007, for negative instances of the object category, download from: http://bit.ly/1BcuwwF
 
-### Runing the code
+### Running the code
 * The actual time for training is reasonably long when using 10K > images for +ve instances and a similar amount of -ve instances. So, the features have been precomputed and the network has been trained. The code test.py loads the trained classifiers and makes predictions on the input image. it can be run by executing:
 python test.py test_image.jpg  
 
